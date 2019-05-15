@@ -6,10 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="./index.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
 </head>
 <body>
     <p>小团团</p>
     <p>渡一</p>
     <input type="text">
+    <div id="app">
+        <input type="text" v-model="msg">
+        <span>{{ msg }}</span>
+    </div>
+    <script>
+       new Vue({
+           el: '#app',
+           data: {
+               msg: 'hello Everyone'
+           }
+       })
+    </script>
 </body>
 </html>
